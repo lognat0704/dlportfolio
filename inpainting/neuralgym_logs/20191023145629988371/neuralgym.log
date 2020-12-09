@@ -1,0 +1,17 @@
+[INFO  2019-10-23 14:56:30 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-23 14:56:30 @__init__.py:80] Saving logging to file: neuralgym_logs/20191023145629988371.
+[INFO  2019-10-23 14:56:31 @_internal.py:122]  * Running on http://172.19.140.150:5003/ (Press CTRL+C to quit)
+[INFO  2019-10-23 14:56:34 @driver.py:230] init
+[INFO  2019-10-23 14:56:34 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 14:56:34] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuInit
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuDeviceGetCount
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuDeviceGet
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuDeviceComputeCapability
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuDeviceGetName
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 14:56:34 @driver.py:292] call driver api: cuMemGetInfo_v2
+[DEBUG 2019-10-23 14:56:40 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 14:56:40 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 14:56:40 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 14:56:40 @driver.py:292] call driver api: cuCtxGetCurrent

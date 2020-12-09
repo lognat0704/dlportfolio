@@ -1,0 +1,25 @@
+[INFO  2019-10-23 16:30:16 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-23 16:30:16 @__init__.py:80] Saving logging to file: neuralgym_logs/20191023163016132031.
+[INFO  2019-10-23 16:30:16 @_internal.py:122]  * Running on http://172.19.140.150:5003/ (Press CTRL+C to quit)
+[INFO  2019-10-23 16:30:20 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:30:20] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -
+[INFO  2019-10-23 16:30:20 @driver.py:230] init
+[DEBUG 2019-10-23 16:30:20 @driver.py:292] call driver api: cuInit
+[DEBUG 2019-10-23 16:30:20 @driver.py:292] call driver api: cuDeviceGetCount
+[DEBUG 2019-10-23 16:30:20 @driver.py:292] call driver api: cuDeviceGet
+[DEBUG 2019-10-23 16:30:20 @driver.py:292] call driver api: cuDeviceComputeCapability
+[DEBUG 2019-10-23 16:30:20 @driver.py:292] call driver api: cuDeviceGetName
+[DEBUG 2019-10-23 16:30:20 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 16:30:21 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 16:30:21 @driver.py:292] call driver api: cuMemGetInfo_v2
+[DEBUG 2019-10-23 16:30:27 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 16:30:27 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 16:30:27 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 16:30:27 @driver.py:292] call driver api: cuCtxGetCurrent
+[INFO  2019-10-23 16:30:27 @driver.py:662] reset context of device 0
+[DEBUG 2019-10-23 16:30:27 @driver.py:292] call driver api: cuDevicePrimaryCtxRelease
+[DEBUG 2019-10-23 16:30:27 @driver.py:292] call driver api: cuDevicePrimaryCtxReset
+[INFO  2019-10-23 16:30:46 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:30:46] "[37mGET /inpainting/api/v1.0/order/59861aec-f56f-11e9-afe6-00e02b680747 HTTP/1.1[0m" 200 -
+[INFO  2019-10-23 16:30:52 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:30:52] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -
+[DEBUG 2019-10-23 16:30:52 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 16:30:52 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 16:30:52 @driver.py:292] call driver api: cuMemGetInfo_v2

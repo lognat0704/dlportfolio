@@ -1,0 +1,58 @@
+[INFO  2019-10-23 16:14:52 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-23 16:14:52 @__init__.py:80] Saving logging to file: neuralgym_logs/20191023161452708669.
+[INFO  2019-10-23 16:14:53 @_internal.py:122]  * Running on http://172.19.140.150:5003/ (Press CTRL+C to quit)
+[INFO  2019-10-23 16:15:26 @driver.py:230] init
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuInit
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDeviceGetCount
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDeviceGet
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDeviceComputeCapability
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDeviceGetName
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuMemGetInfo_v2
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuCtxGetCurrent
+[INFO  2019-10-23 16:15:26 @driver.py:662] reset context of device 0
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDevicePrimaryCtxRelease
+[DEBUG 2019-10-23 16:15:26 @driver.py:292] call driver api: cuDevicePrimaryCtxReset
+[INFO  2019-10-23 16:15:26 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:15:26] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -
+[DEBUG 2019-10-23 16:15:51 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 16:15:52 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 16:15:52 @driver.py:292] call driver api: cuMemGetInfo_v2
+[DEBUG 2019-10-23 16:15:52 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 16:15:52 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 16:15:52 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 16:15:52 @driver.py:292] call driver api: cuCtxGetCurrent
+[INFO  2019-10-23 16:15:52 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:15:52] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -
+[DEBUG 2019-10-23 16:16:23 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 16:16:23 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 16:16:23 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 16:16:23 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 16:16:23 @driver.py:292] call driver api: cuCtxGetCurrent
+[INFO  2019-10-23 16:16:23 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:16:23] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -
+[ERROR 2019-10-23 16:16:36 @app.py:1891] Exception on /inpainting/api/v1.0/order/66c37274-f56d-11e9-a333-00e02b680747 [GET]
+Traceback (most recent call last):
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 104, in img_detail
+    return jsonify(uuid.imgbase64)
+AttributeError: 'NoneType' object has no attribute 'imgbase64'
+[INFO  2019-10-23 16:16:36 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:16:36] "[1m[35mGET /inpainting/api/v1.0/order/66c37274-f56d-11e9-a333-00e02b680747 HTTP/1.1[0m" 500 -
+[DEBUG 2019-10-23 16:16:39 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 16:16:39 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 16:16:39 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 16:16:39 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 16:16:39 @driver.py:292] call driver api: cuCtxGetCurrent
+[INFO  2019-10-23 16:16:39 @_internal.py:122] 172.19.140.253 - - [23/Oct/2019 16:16:39] "[37mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 200 -

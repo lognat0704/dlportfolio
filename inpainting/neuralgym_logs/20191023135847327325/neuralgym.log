@@ -1,0 +1,8 @@
+[INFO  2019-10-23 13:58:47 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-23 13:58:47 @__init__.py:80] Saving logging to file: neuralgym_logs/20191023135847327325.
+[ERROR 2019-10-23 13:58:55 @ultratb.py:155] Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+
+[INFO  2019-10-23 13:58:55 @ultratb.py:1117] 
+Unfortunately, your original traceback can not be constructed.
+

@@ -1,0 +1,29 @@
+## transformation
+young: 3.2
+old: -1.0
+male: 1.5
+female: -0.9
+cool: -1.2
+smile: 1.2
+
+new_dot:
+  young: -1.5 #1.5
+  old: 1.5 #-2.5
+  cool: -1.5 #-0.5
+  smile: 1.5 #0.25
+  female: -1.5 #-0.5
+  male: 1.5 #2.0
+  pose_l: -1.5
+  pose_r: 1.5
+n_try: 3
+
+model_path: '/home/nelson/pretrained_models/karras2019stylegan-ffhq-1024x1024.pkl'
+face_id: ## if None, choose the biggest face. otherwise choose the specified face 
+optimal_flag: True 
+
+## optimization
+latent_file: ''
+dlatent_df: 18 ## optimize 18 layers separately, another option is 1
+max_iter: 10000
+min_loss_improvement: 0.02 ## at least reduce currently best loss by 1% .05
+max_waiting_iter: 50 ## wait for at most 50 iterations 20

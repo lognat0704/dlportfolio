@@ -1,0 +1,6 @@
+[INFO  2019-10-21 14:37:13 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-21 14:37:13 @__init__.py:80] Saving logging to file: neuralgym_logs/20191021143713870955.
+[INFO  2019-10-21 14:37:14 @_internal.py:122]  * Running on http://172.19.140.150:5003/ (Press CTRL+C to quit)
+[INFO  2019-10-21 14:44:14 @_internal.py:122] 172.19.140.253 - - [21/Oct/2019 14:44:14] "[33mGET / HTTP/1.1[0m" 404 -
+[INFO  2019-10-21 14:45:43 @_internal.py:122] 172.19.140.253 - - [21/Oct/2019 14:45:43] "[37mGET /inpainting/api/v1.0/test HTTP/1.1[0m" 200 -
+[INFO  2019-10-21 15:42:12 @_internal.py:122] 172.19.140.253 - - [21/Oct/2019 15:42:12] "[33mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 404 -

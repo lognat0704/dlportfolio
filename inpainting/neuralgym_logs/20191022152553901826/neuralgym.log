@@ -1,0 +1,123 @@
+[INFO  2019-10-22 15:25:53 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-22 15:25:53 @__init__.py:80] Saving logging to file: neuralgym_logs/20191022152553901826.
+[INFO  2019-10-22 15:25:54 @_internal.py:122]  * Running on http://172.19.140.150:5003/ (Press CTRL+C to quit)
+[ERROR 2019-10-22 15:26:06 @app.py:1891] Exception on /inpainting/api/v1.0/order [POST]
+Traceback (most recent call last):
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[{{node inpaint_net/conv1_mask/Conv2D}}]]
+	 [[{{node saturate_cast}}]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 73, in postJsonHandler_multiprocessing
+    Image_inpainting.fixing()
+  File "/home/nelson/inpainting_api/model.py", line 139, in fixing
+    result = sess.run(output)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node inpaint_net/conv1_mask/Conv2D (defined at /home/nelson/inpainting_api/inpaint_ops.py:643) ]]
+	 [[node saturate_cast (defined at /home/nelson/inpainting_api/model.py:127) ]]
+
+Caused by op 'inpaint_net/conv1_mask/Conv2D', defined at:
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/werkzeug/serving.py", line 326, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/http/server.py", line 418, in handle
+    self.handle_one_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/werkzeug/serving.py", line 361, in handle_one_request
+    return self.run_wsgi()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/werkzeug/serving.py", line 303, in run_wsgi
+    execute(self.server.app)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/werkzeug/serving.py", line 291, in execute
+    application_iter = app(environ, start_response)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 73, in postJsonHandler_multiprocessing
+    Image_inpainting.fixing()
+  File "/home/nelson/inpainting_api/model.py", line 124, in fixing
+    output = model.build_server_graph(input_image) ## input image is normalized and masked inside this function
+  File "/home/nelson/inpainting_api/inpaint_model.py", line 312, in build_server_graph
+    config=None)
+  File "/home/nelson/inpainting_api/inpaint_model.py", line 51, in build_inpaint_net
+    x = gated_conv(x, cnum, 5, 1, name='conv1') # gen_conv(x, cnum, 5, 1, name='conv1')
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/contrib/framework/python/ops/arg_scope.py", line 182, in func_with_args
+    return func(*args, **current_args)
+  File "/home/nelson/inpainting_api/inpaint_ops.py", line 643, in gated_conv
+    activation=tf.nn.sigmoid, padding=padding, name=name+"_mask")
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 324, in new_func
+    return func(*args, **kwargs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/layers/convolutional.py", line 424, in conv2d
+    return layer.apply(inputs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1227, in apply
+    return self.__call__(inputs, *args, **kwargs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/layers/base.py", line 530, in __call__
+    outputs = super(Layer, self).__call__(inputs, *args, **kwargs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/keras/engine/base_layer.py", line 554, in __call__
+    outputs = self.call(inputs, *args, **kwargs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/keras/layers/convolutional.py", line 194, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 966, in __call__
+    return self.conv_op(inp, filter)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 591, in __call__
+    return self.call(inp, filter)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 208, in __call__
+    name=self.name)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 1026, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/home/data/shared/conda_envs/tf-gpu/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1801, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+UnknownError (see above for traceback): Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node inpaint_net/conv1_mask/Conv2D (defined at /home/nelson/inpainting_api/inpaint_ops.py:643) ]]
+	 [[node saturate_cast (defined at /home/nelson/inpainting_api/model.py:127) ]]
+
+[INFO  2019-10-22 15:26:06 @_internal.py:122] 172.19.140.253 - - [22/Oct/2019 15:26:06] "[1m[35mPOST /inpainting/api/v1.0/order HTTP/1.1[0m" 500 -

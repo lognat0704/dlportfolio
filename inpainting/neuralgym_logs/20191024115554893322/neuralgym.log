@@ -1,0 +1,24 @@
+[INFO  2019-10-24 11:55:54 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-24 11:55:54 @__init__.py:80] Saving logging to file: neuralgym_logs/20191024115554893322.
+[INFO  2019-10-24 11:55:55 @_internal.py:122]  * Running on http://172.19.140.150:5003/ (Press CTRL+C to quit)
+[INFO  2019-10-24 11:58:35 @_internal.py:122] 172.19.140.253 - - [24/Oct/2019 11:58:35] "[37mGET /inpainting/api/v1.0/test HTTP/1.1[0m" 200 -
+[INFO  2019-10-24 11:58:42 @_internal.py:122] 172.19.140.253 - - [24/Oct/2019 11:58:42] "[37mGET /inpainting/api/v1.0/test HTTP/1.1[0m" 200 -
+[INFO  2019-10-24 11:59:47 @_internal.py:122] 172.19.140.253 - - [24/Oct/2019 11:59:47] "[37mGET /inpainting/api/v1.0/test HTTP/1.1[0m" 200 -
+[INFO  2019-10-24 14:14:51 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 14:14:51] "[37mGET /inpainting/api/v1.0/test HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:06:58 @_internal.py:122] 172.19.140.253 - - [24/Oct/2019 16:06:58] "[37mGET /inpainting/api/v1.0/order/2d8ba7e0-f579-11e9-996f-00e02b680747 HTTP/1.1[0m" 200 -
+[INFO  2019-10-24 16:10:49 @_internal.py:122] 172.19.140.253 - - [24/Oct/2019 16:10:49] "[37mGET /inpainting/api/v1.0/test HTTP/1.1[0m" 200 -
+[INFO  2019-10-24 16:33:57 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:33:57] "[37mPOST /inpainting/api/v1.0/order HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:35:34 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:35:34] "[33mGET /inpainting/api/v1.0/order/storage/ HTTP/1.0[0m" 404 -
+[INFO  2019-10-24 16:35:41 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:35:41] "[33mGET /inpainting/api/v1.0/order/storage/ HTTP/1.0[0m" 404 -
+[INFO  2019-10-24 16:36:23 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:36:23] "[37mGET /inpainting/api/v1.0/test HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:36:41 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:36:41] "[37mGET /inpainting/api/v1.0/test HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:38:43 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:38:43] "[37mPOST /inpainting/api/v1.0/order HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:38:58 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:38:58] "[37mGET /inpainting/api/v1.0/order/af873672-f639-11e9-9dfc-00e02b680747 HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:39:13 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:39:13] "[37mGET /inpainting/api/v1.0/test HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 16:58:12 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 16:58:12] "[37mPOST /inpainting/api/v1.0/order HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 17:18:02 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 17:18:02] "[37mPOST /inpainting/api/v1.0/order HTTP/1.0[0m" 200 -
+[INFO  2019-10-24 17:19:08 @_internal.py:122] 47.97.100.245 - - [24/Oct/2019 17:19:08] "[37mGET /inpainting/api/v1.0/order/2dc237f8-f63f-11e9-98be-00e02b680747 HTTP/1.0[0m" 200 -
+[INFO  2019-10-26 08:17:06 @_internal.py:122] 47.97.100.245 - - [26/Oct/2019 08:17:06] "[33mGET / HTTP/1.0[0m" 404 -
+[INFO  2019-10-27 04:41:27 @_internal.py:122] 47.97.100.245 - - [27/Oct/2019 04:41:27] "[33mGET / HTTP/1.0[0m" 404 -
+[INFO  2019-10-27 16:07:53 @_internal.py:122] 47.97.100.245 - - [27/Oct/2019 16:07:53] "[33mGET / HTTP/1.0[0m" 404 -
+[INFO  2019-10-28 04:20:18 @_internal.py:122] 47.97.100.245 - - [28/Oct/2019 04:20:18] "[33mGET / HTTP/1.0[0m" 404 -

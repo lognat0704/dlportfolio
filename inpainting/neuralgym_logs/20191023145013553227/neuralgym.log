@@ -1,0 +1,18 @@
+[INFO  2019-10-23 14:50:13 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-23 14:50:13 @__init__.py:80] Saving logging to file: neuralgym_logs/20191023145013553227.
+[INFO  2019-10-23 14:50:14 @driver.py:230] init
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuInit
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuDeviceGetCount
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuDeviceGet
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuDeviceComputeCapability
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuDeviceGetName
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 14:50:14 @driver.py:292] call driver api: cuMemGetInfo_v2
+[DEBUG 2019-10-23 14:50:21 @driver.py:292] call driver api: cuCtxGetCurrent
+[DEBUG 2019-10-23 14:50:21 @driver.py:292] call driver api: cuCtxGetDevice
+[DEBUG 2019-10-23 14:50:21 @driver.py:292] call driver api: cuCtxPopCurrent_v2
+[DEBUG 2019-10-23 14:50:21 @driver.py:292] call driver api: cuCtxGetCurrent
+[INFO  2019-10-23 14:50:21 @driver.py:662] reset context of device 0
+[DEBUG 2019-10-23 14:50:22 @driver.py:292] call driver api: cuDevicePrimaryCtxRelease
+[DEBUG 2019-10-23 14:50:22 @driver.py:292] call driver api: cuDevicePrimaryCtxReset

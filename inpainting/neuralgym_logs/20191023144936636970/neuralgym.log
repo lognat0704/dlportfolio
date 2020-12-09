@@ -1,0 +1,11 @@
+[INFO  2019-10-23 14:49:36 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-23 14:49:36 @__init__.py:80] Saving logging to file: neuralgym_logs/20191023144936636970.
+[INFO  2019-10-23 14:49:41 @driver.py:230] init
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuInit
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuDeviceGetCount
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuDeviceGet
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuDeviceComputeCapability
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuDeviceGetName
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuDevicePrimaryCtxRetain
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuCtxPushCurrent_v2
+[DEBUG 2019-10-23 14:49:41 @driver.py:292] call driver api: cuMemGetInfo_v2
