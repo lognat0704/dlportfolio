@@ -11,7 +11,7 @@ Hi, I am Nelson Hong Ming Tseng, a designer and also a data scientist. I feel th
 
 - [Kaggle contest: Recursion Cellular Image Classification](https://github.com/lognat0704/dlportfolio/tree/master/kallge_rcic)
 
-- [Asian Face Generator](https://github.com/lognat0704/dlortfolio/tree/master/facefactory)
+- [Asian Face Generator](https://github.com/lognat0704/dlportfolio/tree/master/facefactory)
 
 - [Image inpainting](https://github.com/lognat0704/dlportfolio/tree/master/inpainting)
 
